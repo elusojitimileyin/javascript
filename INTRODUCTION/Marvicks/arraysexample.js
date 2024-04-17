@@ -60,6 +60,37 @@ let result = number.concat(num)
 console.log(number.concat(num))
 console.log(result)
 
+let display = [["car",2000], ["truck",500],["bike",6500]]
+console.log(display)
+console.log(display[0][0])
+console.log(display[0][1])
+console.log(display[2][0])
+let display1 =  [["scooter",1500]]
+let result1 = display.concat(display1)
+console.log(result1) 
+
+let display3 = [["car",2000,], ["truck",500,],["bike",6500,]]
+
+display3[0].push(["Toyota","Nissan"])
+display3[1].push(["Ford"])
+display3[2].push(["Honda"])
+console.log(display3)
+
+
+// example
+
+let input = [[200,50,300,5], [10,25,7,100], [25,20,70,45], [500,170,11,35]]
+console.log([input[1][0],input[1][1],input[1][2]])
+
+// input[1].pop()
+// console.log(input[1])
+
+input[0].shift()
+console.log(input[1])
+
+input[0].slice()
+console.log(input[1])
+
 
 
 
