@@ -1,4 +1,5 @@
-// nested function
+
+ // nested function
 
 // function calc(x){
 //     function secondNum(a){
@@ -42,13 +43,31 @@
 //     return secondNum
 // };
 
-// function as an argument
+// function as an argument is also called CallBack function
 
 function higherOrderFunction(func){
     console.log("higher function")
     func();
 }
-function lowerOrderFunction(){
+// function lowerOrderFunction(){
+//     console.log("lower function")
+// }
+// higherOrderFunction(lowerOrderFunction)
+
+// higherOrderFunction(function lowerOrderFunction(){
+//     console.log("lower function")
+// })
+
+higherOrderFunction(() => {
     console.log("lower function")
+})
+
+
+// function as a object
+
+function greetings(greet) {
+    return function person(name){
+        return`Hello, ${name}. ${greet}`;
+    }
 }
-higherOrderFunction(lowerOrderFunction)
+console.log(greetings("Good morning!")("John"));
