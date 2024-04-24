@@ -12,4 +12,24 @@ function setProductOfMaximumNumber( array) {
 
 }
 
-module.exports = {setProductOfMaximumNumber};
+function addOneToTheLastIndexOfAndArrayInput(array) {
+
+    let newArray = [];
+   
+        for (let index = array.length - 1; index >= 0; index--) {
+            newArray[index] = array[index] -1;
+             if (array[index] != 9){
+             array[index]++;
+            break;
+
+        }else{
+                array[index] = 0
+            }
+            if (array[0] == 0 && array[1]) array.unshift(1);
+            
+        }
+        return array;
+    }
+  
+
+module.exports = {setProductOfMaximumNumber,addOneToTheLastIndexOfAndArrayInput};
