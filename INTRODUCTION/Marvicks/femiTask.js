@@ -13,7 +13,7 @@ function setProductOfMaximumNumber( array) {
 }
 
 function addOneToTheLastIndexOfAndArrayInput(array) {
-
+// const addOneToTheLastIndexOfAndArrayInput = (array)=>{
     let newArray = [];
    
         for (let index = array.length - 1; index >= 0; index--) {
@@ -25,11 +25,11 @@ function addOneToTheLastIndexOfAndArrayInput(array) {
         }else{
                 array[index] = 0
             }
-            if (array[0] == 0 && array[1]) array.unshift(1);
+            if (array[0] == 0 && array[1]== 0) array.unshift(1);
             
         }
         return array;
     }
   
-
+    // module.exports = addOneToTheLastIndexOfAndArrayInput;
 module.exports = {setProductOfMaximumNumber,addOneToTheLastIndexOfAndArrayInput};

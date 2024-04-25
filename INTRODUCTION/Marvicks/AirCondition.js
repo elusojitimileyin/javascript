@@ -34,13 +34,13 @@ class AirCondition {
     }
 
     increaseTemperature() {
-        if (this.acOn && this.temperature < 30) {
+        if (this.acOn && this.temperature <= 30) {
             this.temperature++;
         }
     }
 
     decreaseTemperature() {
-        if (this.acOn && this.temperature > 16) {
+        if (this.acOn && this.temperature >= 16) {
             this.temperature--;
         }
     }

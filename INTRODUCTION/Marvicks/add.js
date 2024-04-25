@@ -6,7 +6,7 @@ function addNumbers(x,y) {
 // console.log(addNumbers(2,3));
 
 function evenNumbers(numbers) {
-    return numbers.filter(numbers=>numbers %2 == 0)
+    return numbers.filter(numbers=>numbers % 2 == 0)
 }
 
 
